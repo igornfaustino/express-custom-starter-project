@@ -5,6 +5,7 @@ My custom node express starter project with some base configurations
 ## Features
 
 - Express
+- auto import routes
 - Tests
 - Body Parser
 - Morgan tiny console logs
