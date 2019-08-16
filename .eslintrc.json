@@ -1,4 +1,8 @@
 {
+    "env": {
+        "node": true,
+        "mocha": true
+    },
     "extends": [
         "airbnb-base",
         "prettier",
@@ -9,7 +13,12 @@
     ],
     "rules": {
         "prettier/prettier": "error",
-        "no-unused-vars": "warn",
+        "no-unused-vars": [
+            "warn",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
         "no-console": "off",
         "func-names": "off",
         "no-use-before-define": "off",
